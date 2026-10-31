@@ -1,0 +1,18 @@
+{
+  "name": "Budget Buddy",
+  "short_name": "Budget Buddy",
+  "description": "Your personal financial wellness and saving companion.",
+  "start_url": "/app",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#04100e",
+  "theme_color": "#071d17",
+  "icons": [
+    {
+      "src": "/assets/budget-buddy-icon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

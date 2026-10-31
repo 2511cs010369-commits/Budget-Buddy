@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Sign in to Budget Buddy and continue your personal saving journey.">
+  <title>Sign in — Budget Buddy</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/auth-v2.css">
+</head>
+<body class="auth-v2">
+  <div class="auth-sky" aria-hidden="true"><i></i><i></i><i></i><span></span></div>
+  <header class="auth-nav">
+    <a class="auth-logo" href="/" aria-label="Back to Budget Buddy home"><b>₹</b><span>Budget Buddy</span></a>
+    <div><button id="authTheme" type="button" aria-label="Switch color mode">◐</button><a href="/">← Back home</a></div>
+  </header>
+
+  <main class="auth-stage">
+    <section class="auth-story" aria-labelledby="storyTitle">
+      <div class="story-kicker"><i></i> YOUR MONEY STORY CONTINUES</div>
+      <h1 id="storyTitle">One login.<br><span>Every dream</span><br>in motion.</h1>
+      <p>Return to the habits, goals and people helping you build a stronger financial future.</p>
+
+      <div class="goal-orbit" aria-hidden="true">
+        <div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div>
+        <div class="goal-core"><small>LAPTOP GOAL</small><strong>58%</strong><span>₹35K of ₹60K</span></div>
+        <div class="orbit-point point-one">₹20</div><div class="orbit-point point-two">🔥12</div><div class="orbit-point point-three">✦ AI</div>
+      </div>
+
+      <div class="story-cards" aria-hidden="true">
+        <article class="story-card saved-card"><span>✓</span><div><small>TODAY</small><b>₹20 saved successfully</b></div></article>
+        <article class="story-card insight-float"><span>✦</span><div><small>SMART INSIGHT</small><b>You are ahead this week</b></div></article>
+      </div>
+      <div class="story-proof"><div class="proof-faces"><i>D</i><i>M</i><i>Y</i><i>+4</i></div><p><b>Money feels better together.</b><br>Goals, family plans and daily wins—all waiting.</p></div>
+    </section>
+
+    <section class="auth-card-zone" aria-label="Budget Buddy account access">
+      <div class="auth-card-halo" aria-hidden="true"></div>
+      <div class="auth-flip-card" id="authFlipCard">
+        <article class="auth-face auth-front" id="signinFace">
+          <div class="face-top"><span class="security-chip"><i></i> PRIVATE & SECURE</span><span class="face-number">01</span></div>
+          <div class="face-heading"><div class="face-orb">₹</div><div><p>WELCOME BACK</p><h2>Sign in to your space.</h2></div></div>
+          <p class="face-copy">Pick up exactly where you left off.</p>
+
+          <form id="signInForm" class="auth-v2-form">
+            <label for="signInEmail">Email address</label>
+            <div class="field-shell"><span>✉</span><input id="signInEmail" type="email" placeholder="name@example.com" autocomplete="email" required></div>
+            <div class="field-row"><label for="signInPassword">Password</label><a href="#" id="forgotPassword">Forgot password?</a></div>
+            <div class="field-shell"><span>⌁</span><input id="signInPassword" type="password" placeholder="Enter your password" minlength="8" autocomplete="current-password" required><button class="password-eye" type="button" data-password="signInPassword" aria-label="Show password">◉</button></div>
+            <div class="remember-row"><label><input type="checkbox" checked><span></span> Keep me signed in</label><small>Protected session</small></div>
+            <button class="auth-main-action" type="submit"><span>Enter Budget Buddy</span><b>→</b></button>
+          </form>
+
+          <p class="auth-status" id="signInStatus">Use your registered email and password to continue securely.</p>
+          <button class="flip-prompt" id="toSignup" type="button"><span>New to Budget Buddy?</span><b>Create an account</b><i>↻</i></button>
+        </article>
+
+        <article class="auth-face auth-back" id="signupFace" aria-hidden="true" inert>
+          <div class="face-top"><span class="security-chip"><i></i> START YOUR JOURNEY</span><span class="face-number">02</span></div>
+          <div class="face-heading"><div class="face-orb signup-orb">✦</div><div><p>WELCOME IN</p><h2>Create your money space.</h2></div></div>
+          <p class="face-copy">Your first goal is only a few details away.</p>
+
+          <form id="signUpForm" class="auth-v2-form compact-form">
+            <label for="signUpName">Full name</label>
+            <div class="field-shell"><span>☺</span><input id="signUpName" type="text" placeholder="What should we call you?" autocomplete="name" required></div>
+            <label for="signUpEmail">Email address</label>
+            <div class="field-shell"><span>✉</span><input id="signUpEmail" type="email" placeholder="name@example.com" autocomplete="email" required></div>
+            <label for="signUpPassword">Create password</label>
+            <div class="field-shell"><span>⌁</span><input id="signUpPassword" type="password" placeholder="At least 8 characters" minlength="8" autocomplete="new-password" required><button class="password-eye" type="button" data-password="signUpPassword" aria-label="Show password">◉</button></div>
+            <label class="terms-row"><input type="checkbox" required><span></span><small>I agree to use Budget Buddy as my personal finance companion.</small></label>
+            <button class="auth-main-action" type="submit"><span>Create my money space</span><b>→</b></button>
+          </form>
+
+          <p class="auth-status" id="signUpStatus">Create your account instantly—no email confirmation required.</p>
+          <button class="flip-prompt" id="toSignin" type="button"><span>Already have your space?</span><b>Return to sign in</b><i>↻</i></button>
+        </article>
+      </div>
+      <p class="flip-hint"><span>↻</span> The card flips between sign in and account creation</p>
+    </section>
+  </main>
+  <script src="/auth-v2.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.bb-official-brand{position:relative;display:flex!important;align-items:center;overflow:visible;text-decoration:none}
+.bb-wordmark{display:block;width:100%;height:auto;object-fit:contain;filter:brightness(2.45) saturate(1.15) drop-shadow(0 0 9px rgba(20,220,160,.15))}
+.bb-brand-icon{display:block;width:100%;height:100%;object-fit:contain;filter:brightness(2.35) saturate(1.2)}
+.sidebar .bb-official-brand{width:214px;height:62px;padding:5px 7px!important;animation:bbBrandReveal .8s cubic-bezier(.2,.85,.25,1) both}
+.sidebar .bb-wordmark{max-height:54px}.sidebar .bb-brand-icon{display:none}
+.landing-brand.bb-public-brand{width:181px;height:50px}.landing-brand.bb-public-brand .bb-wordmark{max-height:48px}
+.auth-logo.bb-public-brand{width:193px;height:54px}.auth-logo.bb-public-brand .bb-wordmark{max-height:52px}
+.bb-demo-icon{overflow:hidden!important;padding:0!important;background:transparent!important}.bb-demo-icon .bb-brand-icon{width:27px;height:27px}
+.bb-dashboard-seal{position:absolute;z-index:4;right:31px;bottom:24px;display:flex;align-items:center;gap:10px;padding:8px 11px 8px 8px;border:1px solid color-mix(in srgb,var(--mint) 18%,var(--line));border-radius:14px;background:color-mix(in srgb,var(--panel) 72%,transparent);box-shadow:0 14px 35px rgba(0,0,0,.18);backdrop-filter:blur(13px);animation:bbSealPop .8s .35s cubic-bezier(.2,.9,.25,1.15) both}
+.bb-dashboard-seal>.bb-brand-icon{width:34px;height:34px}.bb-dashboard-seal span{display:grid}.bb-dashboard-seal b{font-size:8px;letter-spacing:1.2px;color:var(--mint)}.bb-dashboard-seal small{margin-top:3px;color:var(--muted);font-size:7px;letter-spacing:.8px}
+html[data-theme="light"] .bb-wordmark,html[data-theme="light"] .bb-brand-icon{filter:none}
+@keyframes bbBrandReveal{from{opacity:0;transform:translateX(-12px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes bbSealPop{from{opacity:0;transform:translateY(14px) scale(.88)}to{opacity:1;transform:none}}
+@media(max-width:1200px){.sidebar .bb-official-brand{width:54px;height:54px;padding:4px!important}.sidebar .bb-wordmark{display:none}.sidebar .bb-brand-icon{display:block}.bb-dashboard-seal{right:20px}}
+@media(max-width:720px){.product-v3 .sidebar .bb-official-brand{display:none!important}.bb-dashboard-seal{right:16px;bottom:14px}.bb-dashboard-seal span{display:none}.bb-dashboard-seal>.bb-brand-icon{width:31px;height:31px}.landing-brand.bb-public-brand{width:155px}.auth-logo.bb-public-brand{width:166px}}
+@media(prefers-reduced-motion:reduce){.sidebar .bb-official-brand,.bb-dashboard-seal{animation:none}}
